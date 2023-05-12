@@ -4,8 +4,8 @@
 
 .search-inp {
   width: 773px;
-  background: #FFFFFF;
-  border: 1px solid #EAEBED;
+  background: #ffffff;
+  border: 1px solid #eaebed;
   border-radius: 8px;
 }
 
@@ -13,6 +13,6 @@
   position: relative;
   right: 30px;
   height: 28px;
-  background: #5E96FC;
+  background: #5e96fc;
   border-radius: 8px;
 }
