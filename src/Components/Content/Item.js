@@ -4,10 +4,19 @@ import style from './style.module.css';
 function Item({ vacancyItem }) {
   return (
     <div className={style['wrapper']}>
-      <p>{vacancyItem.vacancy}</p>
-      <p>{vacancyItem.salary}</p>
-      <p>{vacancyItem.workday}</p>
-      <p>{vacancyItem.city}</p>
+      <div className={style['item']}>
+        <h2 className={style['vacancy-h']}>{vacancyItem.vacancy}</h2>
+
+        <div className={style['flex']}>
+          <p className={style['salary']}>{vacancyItem.salary}</p>
+          <p>{vacancyItem.workday}</p>
+        </div>
+
+        <div className={style['location']}>
+          <div className={style['img']}> </div>
+          <p>{vacancyItem.city}</p>
+        </div>
+      </div>
     </div>
   );
 }

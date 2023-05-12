@@ -9,10 +9,11 @@ function Search({ setSearchString }) {
   return (
     <div className={style['wrapper']}>
       <Input
+        size="xl"
         className={style['search-inp']}
         icon={<IconSearch />}
         onChange={(event) => setInput(event.target.value)}
-        placeholder="Your email"
+        placeholder="Your vacancy"
         rightSection={
           <Button onClick={() => setSearchString(input)} className={style['search-btn']}>
             Поиск
