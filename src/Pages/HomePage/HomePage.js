@@ -1,12 +1,15 @@
-import Blocks from '../../Components/Content/Blocks';
+import React, { useState } from 'react';
+import List from '../../Components/Content/List';
 import Search from '../../Components/Search/Search';
 
 function HomePage() {
+  const [searchString, setSearchString] = useState('')
+
   return (
-    <>
-      <Search />
-      <Blocks />
-    </>
+    <div>
+      <Search setSearchString={setSearchString} />
+      <List searchString={searchString} />
+    </div>
   );
 }
 

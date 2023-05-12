@@ -1,11 +1,12 @@
-import { Input, Button } from '@mantine/core';
-import style from './style.module.scss';
+import React from 'react';
+import { Input } from '@mantine/core';
+import style from './style.module.css';
 
-function Search() {
+function Search({ setSearchString }) {
+
   return (
     <div className={style['wrapper']}>
-      <Input placeholder="Your email" />
-      <Button>Search</Button>
+      <Input onChange={(event) => setSearchString(event.target.value)} placeholder="Your email" />
     </div>
   );
 }
