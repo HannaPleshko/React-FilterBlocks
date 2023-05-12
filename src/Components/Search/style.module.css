@@ -1,3 +1,18 @@
 .wrapper {
   display: flex;
 }
+
+.search-inp {
+  width: 773px;
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 8px;
+}
+
+.search-btn {
+  position: relative;
+  right: 30px;
+  height: 28px;
+  background: #5E96FC;
+  border-radius: 8px;
+}

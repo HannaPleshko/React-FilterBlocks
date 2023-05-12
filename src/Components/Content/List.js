@@ -6,10 +6,8 @@ const filterCars = (searchText, listOfCars) => {
   if (!searchText) {
     return listOfCars;
   }
-  return listOfCars.filter(({ car_model }) =>
-    car_model.toLowerCase().includes(searchText.toLowerCase())
-  );
-}
+  return listOfCars.filter(({ car_model }) => car_model.toLowerCase().includes(searchText.toLowerCase()));
+};
 
 function List({ searchString }) {
   const [list, setList] = useState(srorage);
@@ -23,7 +21,7 @@ function List({ searchString }) {
     }, 300);
 
     return () => clearTimeout(Debounce);
-  }, [searchString])
+  }, [searchString]);
 
   return (
     <div>

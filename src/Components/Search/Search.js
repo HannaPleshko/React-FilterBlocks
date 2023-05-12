@@ -1,12 +1,18 @@
 import React from 'react';
-import { Input } from '@mantine/core';
+import { Input, Button } from '@mantine/core';
 import style from './style.module.css';
+import { IconSearch } from '@tabler/icons-react';
 
 function Search({ setSearchString }) {
-
   return (
     <div className={style['wrapper']}>
-      <Input onChange={(event) => setSearchString(event.target.value)} placeholder="Your email" />
+      <Input className={style['search-inp']} icon={<IconSearch />}
+        onChange={(event) => setSearchString(event.target.value)}
+        placeholder="Your email"
+        rightSection={
+          <Button className={style['search-btn']}>Поиск</Button>
+        }
+      />
     </div>
   );
 }
